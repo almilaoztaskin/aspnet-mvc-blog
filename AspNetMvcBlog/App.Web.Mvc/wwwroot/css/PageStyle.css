@@ -1,0 +1,13 @@
+
+#dropdownMenuButton {
+  border-radius:25px;
+  margin-left:100px;
+  
+}
+
+.forgotPassword { 
+    font-style: italic;
+    display: flex;
+    margin-left: 240px;
+}
+
