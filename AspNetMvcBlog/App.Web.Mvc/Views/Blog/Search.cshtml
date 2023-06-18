@@ -1,15 +1,53 @@
 ﻿
 @{
-    Layout = null;
+    Layout = "_Layout";
 }
-
-<!DOCTYPE html>
-
 <html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Blog Arama</title>
-</head>
-<body>
+
+    <head> 
+        
+    </head>
+
+    <body>
+
+	<br />
+
+<div class="row">
+    <div class="col-lg-4 col-md-4">
+        <article class="post-grid mb-5">
+            <a class="post-thumb mb-4 d-block" href="blog-single.html">
+                <img src="~/images/news/news-3.jpg" alt="" class="img-fluid w-100">
+            </a>
+            <span style ="color:red" class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Keşfet</span>
+            <h3 class="post-title mt-1"><a href="blog-single.html">Yeni Rotalar</a></h3>
+             <span class="date-comm font-sm text-capitalize text-color"><i class="ti-time mr-2"></i>08.06.2023</span>
+            @*span class="text-muted letter-spacing text-uppercase font-sm" >08.06.2023</span>*@
+        </article>
+    </div>
+    <div class="col-lg-4 col-md-4">
+        <article class="post-grid mb-5">
+            <a class="post-thumb mb-4 d-block" href="blog-single.html">
+                <img src="~/images/news/news-6.jpg" alt="" class="img-fluid w-100">
+            </a>
+            <span style = "color:red" class =" cat-name text-color font-sm font-extra text-uppercase letter-spacing">Gezi</span>
+            <h3 class="post-title mt-1"><a href="blog-single.html">Mega Yapılar</a></h3>
+            <span class="date-comm font-sm text-capitalize text-color"><i class="ti-time mr-2"></i>17.03.2022 </span>
+
+            @*<span class="text-muted letter-spacing text-uppercase font-sm">17.03.2022</span>*@
+        </article>
+    </div>
+    <div class="col-lg-4 col-md-4">
+        <article class="post-grid mb-5">
+            <a class="post-thumb mb-4 d-block" href="blog-single.html">
+                <img src="~/images/news/news-1.jpg" alt="" class="img-fluid w-100">
+            </a>
+            <span style = "color:red" class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Yaşam</span>
+            <h3 class="post-title mt-1"><a href="blog-single.html">Londra Gezi Rehberi </a></h3>
+            <span class="date-comm font-sm text-capitalize text-color"><i class="ti-time mr-2"></i>29.04.2023</span>
+
+            @*<span class="text-muted letter-spacing text-uppercase font-sm">29.04.2023</span>*@
+        </article>
+    </div>
+</div>
 </body>
 </html>
