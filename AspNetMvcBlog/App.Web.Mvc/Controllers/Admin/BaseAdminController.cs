@@ -4,6 +4,9 @@ namespace App.Web.Mvc.Controllers.Admin
 {
 	public abstract class BaseAdmincontroller : Controller
 	{
-		
+		public IActionResult Index()
+		{
+			return View();
+		}
 	}
 }
