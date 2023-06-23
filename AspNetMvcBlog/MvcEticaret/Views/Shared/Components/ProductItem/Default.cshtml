@@ -1,0 +1,47 @@
+﻿@model ProductItemViewModel
+
+<style>
+	.card-img-top {
+		margin-left: 12px;
+		margin-top: 11px;
+		width: 250px;
+		height: 300px;
+		object-fit: cover;
+	}
+</style>
+
+<div class="col mb-5">
+	<div class="card h-100">
+		<img class="card-img-top" src="@Model.ImageUrl" alt="" style="object-fit: cover;">
+		<div class="card-body p-4">
+			<div class="text-center">
+				<h5 class="fw-bolder">@Model.Title</h5>
+
+				@if (Model.IsSale == true)
+				{
+
+					<div class="d-flex justify-content-center small text-warning mb-2">
+						@for (int i = 0; i < Model.StarCount; i++)
+						{
+							<div class="bi-star-fill"></div>
+						}
+					</div>
+
+					<div class="badge bg-dark text-white position-absolute" style="top: 1.5rem; right: 1.5rem; ">Sale</div>
+					<span class="text-muted text-decoration-line-through">₺@Model.OldPrice </span>
+					<span>₺@Model.Price</span>
+					<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+						<div style="margin-top:25px" class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View Options</a></div>
+					</div>
+				}@if (Model.IsSale == false)
+				{
+					<span>₺@Model.Price</span>
+					<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+						<div style="margin-top:55px" class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+					</div>
+				}
+
+			</div>
+		</div>
+	</div>
+</div>
