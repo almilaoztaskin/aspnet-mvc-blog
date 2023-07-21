@@ -30,13 +30,9 @@
 </head>
 <body>
 
-	@* Partials*@
-
-	<partial name="_NavBarPartialView" />
-
+	@await Component.InvokeAsync("Navbar")
 	@RenderBody()
-
-	<partial name="_FooterPartialView" />
+	@await Component.InvokeAsync("Footer")
 
 
 	@* Scripts*@
