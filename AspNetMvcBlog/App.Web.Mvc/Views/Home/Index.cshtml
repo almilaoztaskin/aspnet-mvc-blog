@@ -1,8 +1,11 @@
-﻿@{
+﻿@*@{
     Layout = "_Layout";
     ViewData["Title"] = "Home Page";
+}*@
 
-}
+@await Component.InvokeAsync("Slider");
+<partial name="_PartialSearch" />
+
 <section class="slider mt-4">
     <div class="container-fluid">
         <div class="row no-gutters">
